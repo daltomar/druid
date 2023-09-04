@@ -1,5 +1,5 @@
 use druid::widget::{Align, Flex, Label, TextBox};
-use druid::{AppLauncher, Data, Env, Lens, LocalizedString, Widget, WidgetBuilder, WindowDesc, WidgetExt};
+use druid::{AppLauncher, Data, Env, Lens, LocalizedString, Widget, WindowDesc, WidgetExt};
 
 const VERTICAL_WIDGET_SPACING: f64 = 20.0;
 const TEXT_BOX_WIDTH: f64 = 200.0;
