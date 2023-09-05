@@ -1,8 +1,8 @@
 use druid::widget::{Align, Flex, Label, TextBox};
 use druid::{AppLauncher, Data, Env, Lens, LocalizedString, Widget, WindowDesc, WidgetExt};
 
-const VERTICAL_WIDGET_SPACING: f64 = 20.0;
-const TEXT_BOX_WIDTH: f64 = 200.0;
+const VERTICAL_WIDGET_SPACING: f64 = 10.0;
+const TEXT_BOX_WIDTH: f64 = 300.0;
 const WINDOW_TITLE: LocalizedString<HelloState> = LocalizedString::new("Hello World");
 
 #[derive(Clone, Data, Lens)]
@@ -14,11 +14,11 @@ fn main() {
     // describe the main window
     let main_window = WindowDesc::new(build_root_widget)
     .title(WINDOW_TITLE)
-    .window_size((400.0, 400.0));
+    .window_size((600.0, 600.0));
 
     // create the initial app state
     let initial_state = HelloState {
-        name: "World".into(),
+        name: "...".into(),
     };
 
     //start the application
